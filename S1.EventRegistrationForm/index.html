@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Event Registration Form</h2>
+
+        <form id="registrationForm">
+
+            <label>Full Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <span id="nameError" class="error"></span>
+
+            <label>Email Address:</label>
+            <input type="text" id="email" placeholder="Enter your email">
+            <span id="emailError" class="error"></span>
+
+            <label>Phone Number:</label>
+            <input type="text" id="phone" placeholder="Enter 10-digit phone number">
+            <span id="phoneError" class="error"></span>
+
+            <label>Gender:</label>
+            <select id="gender">
+                <option value="">Select Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+            <span id="genderError" class="error"></span>
+
+            <label>College Name:</label>
+            <input type="text" id="college" placeholder="Enter college name">
+            <span id="collegeError" class="error"></span>
+
+            <label>Department:</label>
+            <select id="department">
+                <option value="">Select Department</option>
+                <option>CSE</option>
+                <option>ECE</option>
+                <option>EEE</option>
+                <option>IT</option>
+                <option>Mechanical</option>
+                <option>Civil</option>
+            </select>
+            <span id="departmentError" class="error"></span>
+
+            <label>Year of Study:</label>
+            <select id="year">
+                <option value="">Select Year</option>
+                <option>1st Year</option>
+                <option>2nd Year</option>
+                <option>3rd Year</option>
+                <option>4th Year</option>
+            </select>
+            <span id="yearError" class="error"></span>
+
+            <label>Event Selection:</label>
+            <select id="event">
+                <option value="">Select Event</option>
+                <option>Technical Fest</option>
+                <option>Hackathon</option>
+                <option>Cultural Fest</option>
+                <option>Workshop</option>
+            </select>
+            <span id="eventError" class="error"></span>
+
+            <button type="submit">Register</button>
+            <button type="reset" class="reset">Reset</button>
+
+        </form>
+
+        <div id="success"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
